@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Core 2</string>
+
+    // Image Button
+    <string name="university">UNI</string>
+    <string name="station">STATION</string>
+    <string name="hall">HALL</string>
+    <string name="park">PARK</string>
+
+    // Text View
+    <string name="textUni"> UNIVERSITY </string>
+    <string name="textStation"> STATION </string>
+    <string name="textHall"> HALL </string>
+    <string name="textPark"> PARK </string>
+
+    // Detail
+    <string name="chosenimage">chosenImage</string>
+    <string name="textDetailName">TextView</string>
+    <string name="textDetailAuth">TextView</string>
+
+    // Text view Rating Main
+    <string name="textviewRatingUni"> 1 </string>
+    <string name="textviewRatingStation"> 2 </string>
+    <string name="textviewRatingHall"> 3 </string>
+    <string name="textviewRatingPark"> 4 </string>
+</resources>
+

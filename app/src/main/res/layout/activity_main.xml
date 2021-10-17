@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageUni"
+        android:layout_width="145dp"
+        android:layout_height="202dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/university"
+        android:src="@drawable/uniimage"
+        app:layout_constraintBottom_toTopOf="@+id/textUni"
+        app:layout_constraintEnd_toStartOf="@+id/imageStation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageStation"
+        android:layout_width="154dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:contentDescription="@string/station"
+        app:layout_constraintBottom_toTopOf="@+id/textStation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stationimage" />
+
+    <ImageButton
+        android:id="@+id/imageHall"
+        android:layout_width="147dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@string/hall"
+        app:layout_constraintBottom_toTopOf="@+id/textHall"
+        app:layout_constraintEnd_toStartOf="@+id/imagePark"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hallimage" />
+
+    <ImageView
+        android:id="@+id/imagePark"
+        android:layout_width="146dp"
+        android:layout_height="203dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="@string/park"
+        app:layout_constraintBottom_toTopOf="@+id/textPark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/parkimage" />
+
+    <TextView
+        android:id="@+id/textUni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textUni"
+        app:layout_constraintBottom_toTopOf="@+id/ratingUni"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textStation"
+        app:layout_constraintBottom_toTopOf="@+id/ratingStation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/textUni" />
+
+    <TextView
+        android:id="@+id/textHall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/textHall"
+        app:layout_constraintBottom_toTopOf="@+id/ratingHall"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textPark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/textPark"
+        app:layout_constraintBottom_toTopOf="@+id/ratingPark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toEndOf="@+id/textHall" />
+
+    <TextView
+        android:id="@+id/ratingUni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/textviewRatingUni"
+        app:layout_constraintBottom_toTopOf="@+id/imageHall"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ratingStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/textviewRatingStation"
+        app:layout_constraintBottom_toTopOf="@+id/imagePark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toEndOf="@+id/ratingUni" />
+
+    <TextView
+        android:id="@+id/ratingHall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:text="@string/textviewRatingHall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ratingPark"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ratingPark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="84dp"
+        android:text="@string/textviewRatingPark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
